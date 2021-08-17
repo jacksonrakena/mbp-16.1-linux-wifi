@@ -16,8 +16,10 @@ Based on work from the [t2linux wiki](https://wiki.t2linux.org).
 ## Installation
 You can choose to build it manually, or use the prebuilt package from the GitHub workflow.
 ### Prebuilt
-Download the latest `mbp-16.1-linux-wifi-arch` archive from the **Artifacts** section of the latest [GitHub Actions run](https://github.com/jamlam/mbp-16.1-linux-wifi/actions), and unzip it to your desktop.
-Install the kernel, docks, and headers, and it should copy the kernel to your `boot` automatically.
+Download the latest `mbp-16.1-linux-wifi-arch` archive from the **Artifacts** section of the latest [GitHub Actions run](https://github.com/jamlam/mbp-16.1-linux-wifi/actions), and unzip it to your desktop.  
+
+  
+Install the kernel, docss, and headers using the following command and it should copy the kernel to your `boot` automatically.
 ```
 sudo pacman -U mbp-16.1-linux-wifi-*.zst
 ```
