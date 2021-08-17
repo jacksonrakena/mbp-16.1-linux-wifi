@@ -16,7 +16,7 @@ jobs:
         printf 'builduser ALL=(ALL) ALL\\n' | tee -a /etc/sudoers
         chown -R builduser:builduser ./
         sudo -u builduser gpg --keyserver keyserver.ubuntu.com --recv-keys 38DBBDC86092693E
-        sudo -u builduser bash -c 'export MAKEFLAGS=j\$(nproc) && makepkg -s --noconfirm --skippgpchecks'
+        sudo -u builduser bash -c 'export MAKEFLAGS=j\$(nproc) && makepkg -s --noconfirm --skippgpcheck'
         EOF
 
         docker run -t -v $PWD:/build archlinux /bin/bash /build/entrypoint.sh
