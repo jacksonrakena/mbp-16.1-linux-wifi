@@ -28,5 +28,7 @@ Clone the repo and build it using `makepkg`.
 ```bash
 git clone https://github.com/jamlam/mbp-16.1-linux-wifi.git
 cd mbp-16.1-linux-wifi.git
+MAKEFLAGS="-j$(nproc)" # This should tell makepkg to use as many processors as are available
 makepkg -si --skipinteg
 ```
+This can take a while.
