@@ -6,7 +6,7 @@ An Arch Linux package for Linux kernel with bleeding edge 2018+ MacBook Pro supp
 This is a modified version of [aunali1's linux-mbp-arch kernel](https://github.com/aunali1/linux-mbp-arch), applying the
 Corellium patch for BCM4377 and other chips.
 
-In order to get the patch to apply cleanly, some patches to support other BCMxxxx devices from other MacBooks.
+In order to get the patch to apply cleanly, some patches to support BCMxxxx devices from other MacBooks were removed.  
 The following devices have been tested to work with this kernel:
 - `MacBookAir9,1` (MacBook Air, 2020, Intel) - wireless chip `BCM4377b`/`BCM4377/4`
 - `MacBookPro16,1` (MacBook Pro, 2019, Intel) - wireless chip `BCM4364`
